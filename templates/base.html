@@ -1,0 +1,72 @@
+<html>
+
+<head>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="static/styles.css"></link>
+
+
+    <!-- jQuery -->
+    <script   src="https://code.jquery.com/jquery-1.12.2.min.js" integrity="sha256-lZFHibXzMHo3GGeehn1hudTAP3Sc0uKXBXAzHX1sjtk=" crossorigin="anonymous"></script>
+
+    <!-- Mabpox GL -->
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.17.0/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.17.0/mapbox-gl.css' rel='stylesheet'>
+
+    <!-- Mapbox.js (fallback) -->
+    <script src='https://api.mapbox.com/mapbox.js/v2.3.0/mapbox.js'></script>
+    <link href='https://api.mapbox.com/mapbox.js/v2.3.0/mapbox.css' rel='stylesheet' />
+
+    <!-- GeoViewport -->
+    <script src='//api.tiles.mapbox.com/mapbox.js/plugins/geo-viewport/v0.1.1/geo-viewport.js'></script>
+
+    <!-- MathJax -->
+    <script type="text/x-mathjax-config">
+  MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ["\\(", "\\)"]],
+      processEscapes: true,
+    }
+  }
+</script>
+<script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+
+    <style>
+	#map { width: 20vw; height: 50vh; padding-right: 400px;}
+    </style>
+
+</head>
+
+<body>
+
+	<center>
+		<br>
+		<nav class="navbar navbar-light justify-content-between" style="width: 60%;">
+		  	<a class="navbar-brand logo" href=".">
+		  		<span style="color: rgb(84, 151, 246);">Gerrymandering Calculator</span>
+		  	</a>
+		  	<form class="form-inline">
+		    	<button class="btn btn-primary my-2 my-sm-0" type="submit">What is this?</button>
+		    	<li style="color: white;">
+		    	<button class="btn btn-warning my-2 my-sm-0" type="submit">Read the Article</button>
+		  	</form>
+		</nav>
+		<hr style="width: 70%">
+
+		<br><br>
+		{% block content %}{% endblock %}
+	</center>
+	<script src="https://cdn.jsdelivr.net/npm/typed.js"></script>
+	<script>
+		var typed = new Typed('.animate', {
+		  strings: [
+			'MO-12', 'IN-4', 'NJ-5', 'DE-At Large', 'SC-3', 'GA-11', 'CA-16', 'KY-8', 'WA-5', 'OH-6'
+		  ],
+		  typeSpeed: 200,
+		  backSpeed: 50,
+		  loop: true,
+		  shuffle: true
+		});
+	</script>
+</body>
+
+</html>
