@@ -1,0 +1,29 @@
+.logo {
+	padding-left: 5px;
+	text-align: center;
+	font-weight: 800;
+	color: grey;
+}
+
+.btn-dark {
+	background-color: rgb(44, 111, 206);
+	border-width: 0px;
+}
+
+.btn-dark:hover {
+	background-color: rgb(14, 71, 166);
+	border-width: 0px;
+}
+
+.title {
+	text-decoration-style: underline;
+	font-weight: 800;
+	color: grey;
+}
+
+.wavy {
+  text-decoration-line: underline;
+  text-decoration-style: wavy;
+  text-decoration-color: lightblue;
+  text-decoration-thickness: 3px;
+}
