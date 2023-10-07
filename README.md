@@ -6,7 +6,5 @@ This a website I made for my final project for Writing to Make Change with Ms. T
 
 ## How to Access
 
-[Access the website here](http://moe.stuy.edu/~gthompson30/gerrymandering/)
-
 [Read the article here](https://medium.com/@gthompson30/how-to-end-gerrymandering-the-efficiency-gap-1b788b19cf23)
 
